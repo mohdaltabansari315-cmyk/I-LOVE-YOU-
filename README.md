@@ -1,4 +1,5 @@
- 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,46 +19,30 @@ body {
   color: white;
 }
 .card {
-  background: rgba(255,255,255,0.2);
   padding: 30px 20px;
   border-radius: 25px;
   width: 85%;
   max-width: 350px;
-  box-shadow: 0 8px 25px #b8326066;
+  background: #ffffff30;
 }
-h1 { font-size: 32px; }
 button {
+  padding: 13px 25px;
+  margin: 8px;
   border: none;
-  padding: 13px 28px;
-  margin: 10px;
   border-radius: 25px;
   font-size: 18px;
-  cursor: pointer;
 }
 #yes { background: #ff1744; color: white; }
 #no { background: white; color: #ff1744; }
-#message { font-size: 20px; margin-top: 20px; }
 </style>
 </head>
 <body>
 <div class="card">
-  <h1>I LOVE YOU ❤️</h1>
-  <p>Will you be mine? 💖🥹</p>
-  <button id="yes" onclick="yesLove()">YES 💖</button>
-  <button id="no" onclick="noLove()">NO 💔</button>
-  <div id="message"></div>
+<h1>I LOVE YOU ❤️</h1>
+<p>Will you be mine? 🥹💖</p>
+<button id="yes" onclick="document.getElementById('msg').innerHTML='Yay! ❤️ You made me so happy! 🥰💖'">YES 💖</button>
+<button id="no" onclick="document.getElementById('msg').innerHTML='Oh no! 💔 Maybe someday ❤️‍🩹'">NO 💔</button>
+<h3 id="msg"></h3>
 </div>
-<script>
-function yesLove() {
-  document.getElementById("message").innerHTML =
-  "Yayyy! ❤️🥰 You made my day! 💕😘";
-  document.querySelector(".card").style.background =
-  "rgba(255,80,130,0.5)";
-}
-function noLove() {
-  document.getElementById("message").innerHTML =
-  "Oh no! 💔🥺 Maybe someday... ❤️‍🩹";
-}
-</script>
 </body>
 </html>
