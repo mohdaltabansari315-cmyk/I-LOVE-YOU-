@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Love ❤️</title>
+<style>
+body {
+  background: linear-gradient(135deg,#ff758c,#ff7eb3);
+  font-family: Arial,sans-serif;
+  text-align: center;
+  color: white;
+  padding: 25px 10px;
+}
+.box {
+  background: rgba(255,255,255,0.2);
+  border-radius: 25px;
+  padding: 25px 12px;
+  max-width: 400px;
+  margin: 40px auto;
+}
+button {
+  padding: 12px 28px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#message { font-size: 21px; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>❤️ I Love You ❤️</h1>
+  <p>Will you accept my love?</p>
+  <button onclick="yes()">Yes 💖</button>
+  <button onclick="no()">No 💔</button>
+  <div id="message"></div>
+</div>
+<script>
+function yes() {
+  document.getElementById("message").innerHTML =
+  "🥰💕 You made my day! I Love You So Much! 💖🌹";
+}
+function no() {
+  document.getElementById("message").innerHTML =
+  "🥺💔 It's okay... You will always be special. ❤️";
+}
+</script>
+</body>
+</html>
